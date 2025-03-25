@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-image: url('images/wood.jpg'); /* A letöltött fa textúra képe */
+    background-repeat: repeat; /* A háttérkép ismétlődése */
+    background-size: 100%; /* A háttérkép kitölti az egész képernyőt */
+}
+
+main, .content {
+    padding-top: 70px; /* Ezt a navbar magasságánál picit nagyobbra állítsd */
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 40px; /* Állítsd be a navbar magasságát */
+    background: rgba(0, 0, 0, 0.7);
+    /* background: #EEC1A0; Sötétbarna */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 50px; /* Állítsd be a kívánt méretet */
+    height: auto; /* Az arányokat megtartja */
+    margin-right: 10px; /* Kisebb térköz a kép és a szöveg között */
+}
+
+header .logo {
+    display: flex;  /* A szöveg és a kép egy sorba kerül */
+    align-items: center; /* Függőleges középre igazítás */
+    font-size: 24px; /* Szöveg méretének növelése, ha szükséges */
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-right: 30px;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #e67e22;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.content {
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e67e22; /* Gomb szín */
+    color: white;
+    text-decoration: none; /* Link alapértelmezett aláhúzása eltávolítva */
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #d35400; /* Gomb színének változása hover állapotban */
+}
+
+.section-with-image {
+    position: relative;
+    background-image: url('images/foetel_teszta.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;  /* vagy bármilyen magasság, amit szeretnél */
+    background-attachment: fixed;
+}
+
+#weekly-menu img {
+    width: 100%; /* A szülő elem teljes szélességét elfoglalja */
+    height: auto; /* Megtartja az arányokat */
+    display: block; /* Megakadályozza a felesleges térközt alatta */
+}
+
+#contact{
+    display: flex; /* A Flexbox beállítása */
+    justify-content: space-between; /* Ha a két elem között távolságot szeretnél */
+    gap: 20px; /* Térköz a két elem között */
+}
+
+.info {
+    flex: 1; /* Az információs rész kitölti a rendelkezésre álló helyet */
+    text-align: left;
+}
+
+.map-container {
+    flex: 1;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    /* background: rgba(255, 255, 255, 0.9); */
+    /* padding: 10px; */
+    /* border-radius: 8px; */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    /* font-size: 14px; */
+    z-index: 9999; /* Magas z-index, hogy a footer fölött maradjon */
+}
+
+.fixed-footer p {
+    margin: 5px 0;
+}
+
+.fixed-footer img {
+    max-width: 300px;
+    height: auto;
+    margin-top: 5px;
+}
