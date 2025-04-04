@@ -296,25 +296,25 @@ a:hover {
 /*============================
 =            MENU            =
 ============================*/
-.menus:hover img {
+/* .menus:hover img {
   transform: scale(1.1, 1.1);
-}
+} */
 
-.menu-img {
+/* .menu-img {
   overflow: hidden;
   height: 80px;
   width: 80px;
-}
+} */
 
-.menu-img img {
+/* .menu-img img {
   transition: all .5s ease;
   height: 100%;
   object-fit: cover;
-}
+} */
 
-.menu-price {
+/* .menu-price {
   text-align: right;
-}
+} */
 
 .menus {
   padding-bottom: 15px;
@@ -328,7 +328,8 @@ a:hover {
 }
 
 .menus .text-wrap {
-  width: calc(100% - 95px);
+  /* width: calc(100% - 95px); */
+  width: 100%;
   margin-left: 15px;
 }
 
